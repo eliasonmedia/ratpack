@@ -1,0 +1,23 @@
+@charset "UTF-8";
+$blue: #24bbd5;
+$offwhite: #F5F5F5;
+$darkblue: #105663; 
+
+/* importing the entire group of stylesheets here */
+
+/* import stylesheets */
+@import 'imports/globalstyles.scss';
+@import 'imports/reset.scss';
+@import 'imports/fonts.scss';
+@import 'imports/grids.scss';
+
+/* end import */
+
+
+
+#sign_in {
+  font-size:24px;
+  margin:20px 0 0;
+}
+
+

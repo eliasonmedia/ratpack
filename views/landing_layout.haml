@@ -1,0 +1,11 @@
+!!!
+%html
+  = haml :'shared/head'
+  %body.user-page
+    #wrapper
+      =yield
+    #footer
+      = haml :'shared/copyright'
+    .footerClear
+    = haml :'shared/inline_js'
+

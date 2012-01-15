@@ -1,0 +1,26 @@
+defaults: &defaults
+  facebook_app_id: '209223925838990'
+  facebook_app_secret: 'a3939fe4a9fb1ed4b53a296acda842c1'
+  email: 
+    from_address: 'TheRatPack@eliasonmedia.com'
+    via: 
+      address: 'smtp.sendgrid.net'
+      port: 587
+      user_name: 'developer@eliasonmedia.com.com'
+      password: 'foo'
+      domain: 'heroku.com'
+production:
+  <<: *defaults
+  base_url: 'http://ratpack.herokuapp.com'
+staging:
+  <<: *defaults
+development:
+  <<: *defaults
+  database_uri: 'postgres://localhost/ratpack_dev'
+  redis_uri: 'redis://localhost/4' 
+  base_url: 'http://localhost:5000'
+test:
+  <<: *defaults
+  database_uri: 'postgres://localhost/ratpack_test'
+  redis_uri: 'redis://localhost/4' 
+  base_url: 'http://test.host'

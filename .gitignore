@@ -1,0 +1,8 @@
+tmp/**/*
+.sass-cache/
+**/.DS_Store
+.DS_Store
+log/*
+.env
+.bundle/
+

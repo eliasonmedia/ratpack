@@ -1,0 +1,13 @@
+!!!
+%html
+  = haml :'shared/head'
+  %body.user_page
+    #wrapper
+      #homeContent
+        =yield
+      .mainContentClear
+    #footer
+      = haml :'shared/copyright'
+      = haml :'shared/user_footer_logout', locals: { user: user }  
+    .footerClear
+      = haml :'shared/inline_js'
