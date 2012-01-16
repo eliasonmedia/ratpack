@@ -5,7 +5,6 @@ require 'bundler'
 Bundler.require
 require 'bundler/setup'
 require 'sinatra'
-require 'rpm_contrib'
 require 'sinatra/content_for'
 require 'active_support'
 CONFIG = YAML::load_file(File.join(File.dirname(__FILE__),  'config.yml'))[ENV['RACK_ENV']].symbolize_keys
