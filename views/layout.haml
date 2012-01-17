@@ -6,7 +6,7 @@
     .topbar
       .fill
         .container
-          %a.brand{:href => "#"} RatPack 
+          %a.brand{:href => "/"} RatPack 
           %ul.nav
             %li.active
               %a{:href => "/"} Home
@@ -14,9 +14,6 @@
               %a{:href => "/users"} Users
             %li
               %a{:href => "#contact"} Contact
-          -#%form.pull-right{:action => ""}
-            -#%input.input-small{:placeholder => "Username", :type => "text"}
-            -#%input.input-small{:placeholder => "Password", :type => "password"}
           - unless @user.nil?
             %a.btn{ :href => '/logout', :type => "submit"} Logout  
     .container
