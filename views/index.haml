@@ -1,0 +1,12 @@
+-if @user.nil? 
+  Hello from index.haml
+-else
+  Hello
+  = @user.username
+%br
+%br
+
+%a{href:'/users'}See the users
+%br
+%a{href:'/logout'} Logout
+

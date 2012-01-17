@@ -1,0 +1,10 @@
+- if users.empty? 
+  %h1 No users yet!
+- users.each_with_index do |user, index|
+  .user 
+    %h2
+      = index + 1
+      %a{href: "/users/#{user.username}"}=user.username
+
+%a{href: '/users/new'} Create a new user!
+  
